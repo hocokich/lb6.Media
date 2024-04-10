@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lb6.Media", "Media\lb6.Media.csproj", "{98E820D3-285C-480E-A5FC-568DCB86D71F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundPlayer", "SoundPlayer\SoundPlayer.csproj", "{98E820D3-285C-480E-A5FC-568DCB86D71F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayer", "VideoPlayer\VideoPlayer.csproj", "{4CB153AE-B960-4DD0-BDEB-70BEB4AAC94F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{98E820D3-285C-480E-A5FC-568DCB86D71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E820D3-285C-480E-A5FC-568DCB86D71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E820D3-285C-480E-A5FC-568DCB86D71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB153AE-B960-4DD0-BDEB-70BEB4AAC94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB153AE-B960-4DD0-BDEB-70BEB4AAC94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB153AE-B960-4DD0-BDEB-70BEB4AAC94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB153AE-B960-4DD0-BDEB-70BEB4AAC94F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

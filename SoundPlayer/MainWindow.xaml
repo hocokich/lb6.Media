@@ -1,0 +1,31 @@
+﻿<Window x:Class="SoundPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundPlayer"
+        mc:Ignorable="d"
+        Title="Spotify by Sanya" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="OpenFile" Content="Открыть" HorizontalAlignment="Left" Margin="78,10,0,0" VerticalAlignment="Top" Click="OpenFile_Click"/>
+        <ListBox x:Name="ListOfTracks" Margin="13,35,607,58" SelectionChanged="ListOfTracks_SelectionChanged"/>
+        <ScrollBar x:Name="timeLine" HorizontalAlignment="Left" Margin="195,359,0,0" VerticalAlignment="Top" Orientation="Horizontal" Width="468" Maximum="100" ValueChanged="timeLine_ValueChanged" Thumb.DragStarted="timeLine_DragStarted" Thumb.DragCompleted="timeLine_DragCompleted"/>
+        <ScrollBar x:Name="SBvoluem" Margin="668,244,0,0" Height="132" Width="17" SmallChange="0.05" ValueChanged="SBvoluem_ValueChanged" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Value="0.2">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Button x:Name="StopBtn" Content="⏹️" HorizontalAlignment="Left" Margin="450,381,0,0" VerticalAlignment="Top" Width="32" Click="StopBtn_Click" IsEnabled="False"/>
+        <Label x:Name="TrackName" Content="" HorizontalAlignment="Left" Margin="230,206,0,0" VerticalAlignment="Top" Width="398" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lbCurrentTime" Content="00:00" HorizontalAlignment="Left" Margin="198,378,0,0" Width="40" Height="25" VerticalAlignment="Top"/>
+        <Label x:Name="lbMaxTime" Content="00:00" HorizontalAlignment="Left" Margin="623,379,0,0" VerticalAlignment="Top" Width="40" Height="25"/>
+        <Button x:Name="Shuffle" Content="🔀" IsEnabled="True" HorizontalAlignment="Left" Margin="161,0,0,33" Width="32" Height="20" VerticalAlignment="Bottom" Click="Shuffle_Click"/>
+        <Button x:Name="Repeat" Content="🔁" IsEnabled="False" HorizontalAlignment="Left" Margin="124,0,0,33" Width="32" Height="20" VerticalAlignment="Bottom" Click="Repeat_Click" />
+        <Button x:Name="PlayOrPauseBtn" Content="▶️" HorizontalAlignment="Left" Margin="413,381,0,0" VerticalAlignment="Top" Width="32" Click="PlayOrPauseBtn_Click"/>
+    </Grid>
+</Window>
